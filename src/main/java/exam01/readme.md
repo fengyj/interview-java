@@ -36,7 +36,7 @@ Reported on 2021-06-14 of company XYZ
 User wants to see the full debt list on each reported date by given company. Here is the logic to populate the list:
 
 1. On the reported date, if it's a financial report, all the debts come from it.
-2. On the reported date, if it's a statement, list the debts from the statement and then pick the another debts from the list of previous reported date.
+2. On the reported date, if it's a statement, list the debts from the statement and then pick the other debts from the list of previous reported date.
 3. On the reported date, if both financial report and statement are available, ignore the data in the statement.
 
 For example:
