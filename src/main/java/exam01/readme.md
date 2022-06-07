@@ -33,7 +33,7 @@ public class Document {
 }
 ```
 
-> **Please notice, in this kind of document (financial report), it includes all the debts of the company on that date.**
+> **Please note, in this kind of document (financial report), it includes all the debts of the company on that date.**
 > For example, on 2020-12-31, there is a financial report document, it contains A, B, and C, 3 debts. It means the company only has that 3 debts from 2020-12-31.
 > And then, on 2021-03-31, there is another financial report document, it contains A, C, D, and E debts. It means the company has 4 debts (B is removed, D and E are new added) from 2021-03-31.
 
@@ -65,7 +65,7 @@ public class Document {
 }
 ```
 
-> **Please notice, in this kind of document (statement), it only includes the debts of the company have been changed from the reported date.**
+> **Please note, in this kind of document (statement), it only includes the debts of the company have been changed from the reported date.**
 > Using above sample as example, the debt, 200803-3%, is changed with a new coupon rate (from 3% to 2%) from 2021-06-14. And a new debt, 202106-2.5%, is added.
 > But on 2021-06-14, the company also have two other debts which are listed in the document published on 2020-12-31, 201006-2.7%, and 201512-1.5%.
 
