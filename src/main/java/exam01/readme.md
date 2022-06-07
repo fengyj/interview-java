@@ -103,9 +103,21 @@ The input could be a document list as below:
 ```Json
 [
   {"reportedDate": "2020-12-31", "documentType": "FinancialReport", "debts": [...] },
-  {"reportedDate": "2020-03-31", "documentType": "FinancialReport", "debts": [...] },
-  {"reportedDate": "2020-04-16", "documentType": "Statement", "debts": [...] },
-  {"reportedDate": "2020-05-12", "documentType": "Statement", "debts": [...] }
-  {"reportedDate": "2020-06-30", "documentType": "FinancialReport", "debts": [...] },
+  {"reportedDate": "2021-03-31", "documentType": "FinancialReport", "debts": [...] },
+  {"reportedDate": "2021-04-16", "documentType": "Statement", "debts": [...] },
+  {"reportedDate": "2021-05-12", "documentType": "Statement", "debts": [...] },
+  {"reportedDate": "2021-06-30", "documentType": "FinancialReport", "debts": [...] }
+]
+```
+
+Then output will be like:
+
+```Json
+[
+  {"reportedDate": "2020-12-31", "debts": [...] },
+  {"reportedDate": "2021-03-31", "debts": [...] },
+  {"reportedDate": "2021-04-16", "debts": [...] },
+  {"reportedDate": "2021-05-12", "debts": [...] },
+  {"reportedDate": "2021-06-30", "debts": [...] }
 ]
 ```
