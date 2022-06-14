@@ -26,12 +26,12 @@ When the ```msgType``` is ```Snapshot```, it means the ```Message``` object cont
 
 When the ```msgType``` is ```Delta```, it means the ```Message``` object only contains the records have been changed (include added and updated).
 
-Message producer usually use the ```Delta``` message to distribute the data to consumer to save the bandwidth. But the first message is a ```Snapshot``` message,
-and occasionally use a ```Snapshot``` message to instead of a ```Delta``` message to send all the records of ```Something``` in case any ```Delta``` message was lost.
+Message producer usually use the ```Delta``` message to distribute the data to consumer to save the bandwidth. But the first message always is a ```Snapshot``` message,
+and occasionally use a ```Snapshot``` message instead of a ```Delta``` message to send all the records of ```Something``` in case any ```Delta``` message was lost.
 
 ## Requirement
 
-As a consumer, when received a series of messages, wants to save the data into a proper data structure, thus it can be used for a query like user can input a time and returns all the records of ```Something``` at that moment.
+As a consumer, when received a series of messages, wants to save the data into a proper data structure, thus it can be used for a query to return all the records of ```Something``` at any given point in time.
 
 For example, you received following messages.
 
