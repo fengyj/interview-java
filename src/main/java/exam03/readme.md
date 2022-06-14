@@ -22,7 +22,7 @@ public class Something {
 }
 ```
 
-When the ```msgType``` is ```Snapshot```, it means the ```Message``` object contains all the records of the ```Something```.
+When the ```msgType``` is ```Snapshot```, it means the ```Message``` object contains all the records of the ```Something``` at the point in time when the message is sent.
 
 When the ```msgType``` is ```Delta```, it means the ```Message``` object only contains the records have been changed (include added and updated).
 
